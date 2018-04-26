@@ -29,7 +29,7 @@ class AddCounter extends React.Component {
 }
 
 function mapDispatchToProps(dispatch) {
-    return { action: bindActionCreators(addCounter, dispatch) }
+    return { actions: bindActionCreators(addCounter, dispatch) }
 }
 
 export default connect(mapDispatchToProps(AddCounter));
